@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Audio</h2>
+    <audio src="./assets/audios/tallerMecanico.mp3" controls></audio><!-- Tambien se puede colocar autoplay, o loop -->
+    <h2>Video</h2>
+    <video src="./assets/videos/videoLluvia.mp4" controls></video>
+    <h2>Iframe</h2>
+    <iframe src="https://colorhunt.co" frameborder="10" width="500" height="500"></iframe>
+    <h2>Formularios</h2>
+    <form>
+        <div>
+            <label for="username">Usuario</label>
+            <input type="text" name="username" id="username" placeholder="nombre usuario" minlength="3" maxlength="10">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="pass" id="password">
+        </div>
+        <div>
+            <label for="pais">Selecciona el pais</label>
+            <select name="pais" id="pais">
+                <option value="" selected disabled>No Selecciona</option>
+                <option value="AR">Argentina</option> <!-- value es el valor que realmente se manda -->
+                <option value="FR">Francia</option>
+            </select>
+        </div>
+        <div><!-- si no se pone el id igual, te deja hacer multiopcion -->
+            <label for="pais-1">selecciona una opcion</label>
+                <span>Argentina</span><input type="radio" name="pais-1">
+                <span>Francia</span><input type="radio" name="pais-1">
+        </div>
+        <div>
+            <label for="mensaje">Ingrese su mensaje</label>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="hola"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="confirmar">
+        </div>
+
+    </form>
+</body>
+</html>
